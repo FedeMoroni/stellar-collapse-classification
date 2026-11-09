@@ -59,9 +59,3 @@ Para salir del entorno:
 ```bash
 deactivate
 ```
-
-## Versionado de datos
-
-Las tres capas de `data/` están incluidas en el versionado. Bronze ocupa
-aproximadamente 347 MB, Silver contiene tres CSV y Gold está vacío por ahora.
-Los archivos de Bronze son originales y deben conservarse sin modificaciones.
