@@ -1,0 +1,23 @@
+================================================================================
+Title: Core-Collapse Supernovae from 9 to 120 Solar Masses Based 
+       on Neutrino-powered Explosions  
+Authors: Sukhbold T., Ertl T., Woosley S.E., Brown J.M., Janka H. 
+================================================================================
+Description of contents: light_curves/ (1.5Mb)
+  Z9.6/
+  W18/
+  N20/
+  - all of the succesfull explosion models from Z9.6, W18 and N20 engines were 
+  post-processed with KEPLER until about 2.e7 seconds (~231 days) since the 
+  explosion, to obtain approximate bolometric luminosities. Each table lists 
+  time in days and log of bolometric luminosity in erg/s.
+  These tables are 'trimmed' versions, as the original calculation had many 
+  more points near the shock break-out and near the transition between 
+  plateau and nebular phases. Please get in touch with us if you're 
+  interested in those 'high resolution' tables. 
+
+System requirements: All files are ASCII tables.
+
+Additional comments: None.
+
+================================================================================

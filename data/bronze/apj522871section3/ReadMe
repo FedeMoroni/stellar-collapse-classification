@@ -1,0 +1,27 @@
+================================================================================
+Title: Core-Collapse Supernovae from 9 to 120 Solar Masses Based 
+       on Neutrino-powered Explosions  
+Authors: Sukhbold T., Ertl T., Woosley S.E., Brown J.M., Janka H. 
+================================================================================
+Description of contents: explosion_results_PHOTB/ (212Kb)
+  these are the outcomes after we process our 200 
+  progenitors through various "engines":
+       9-12 = processed by Z9.6 only
+       >12  = processed by W20, W15, W18, N20, S19.8
+  Here Z9.6 is calibrated to SN1054 (Crab) and the rest are calibrated to 
+  SN1987A. These results are similar to those published in Ertl et al. (2015) 
+  [arXiv:1503.0752], but they are *NOT* identical, especially for lower mass 
+  models. See Section 3 and 4 for the differences. When the star implodes, 
+  the explosion energy is 0.0 and other entries are empty. The fallback 
+  supernovae are noted by the large values of M_fallback and low values of 
+  M_outside(Ni) in the "With Fallback:" section. 
+  The "special trajectory:" and "With fallback:" section info are what we 
+  have used as lower and upper limits respectively, when we post-process the 
+  models using KEPLER. 
+
+System requirements:  All files are ASCII tables. 
+
+Additional comments:  Please get in touch with us if you're interested in 
+the actual trajectories. 
+
+================================================================================

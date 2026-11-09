@@ -1,0 +1,1897 @@
+Calibration: w15.0
+==================
+
+w12.25 (w2015)
+------------
+E_exp = 1.29 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.569 M_sun
+M_fallback           = 6.5746E-04 M_sun
+M_outside(Ni)        = 5.7331E-02 M_sun
+M_outside(Tr)        = 2.5758E-02 M_sun
+M_outside(alpha)     = 5.9925E-02 M_sun
+
+special trajectory:
+M_special            = 1.656 M_sun
+M_outside(Ni)        = 0.049 M_sun
+M_outside(Tr)        = 0.002 M_sun
+M_outside(alpha)     = 0.007 M_sun
+
+
+w12.5 (w2015)
+------------
+E_exp = 1.29 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.588 M_sun
+M_fallback           = 7.8201E-04 M_sun
+M_outside(Ni)        = 6.0781E-02 M_sun
+M_outside(Tr)        = 2.4564E-02 M_sun
+M_outside(alpha)     = 5.9274E-02 M_sun
+
+special trajectory:
+M_special            = 1.675 M_sun
+M_outside(Ni)        = 0.053 M_sun
+M_outside(Tr)        = 0.002 M_sun
+M_outside(alpha)     = 0.008 M_sun
+
+
+w12.75 (w2015)
+------------
+E_exp = 1.13 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.643 M_sun
+M_fallback           = 8.4503E-04 M_sun
+M_outside(Ni)        = 6.4238E-02 M_sun
+M_outside(Tr)        = 1.4767E-02 M_sun
+M_outside(alpha)     = 5.3329E-02 M_sun
+
+special trajectory:
+M_special            = 1.715 M_sun
+M_outside(Ni)        = 0.054 M_sun
+M_outside(Tr)        = 0.001 M_sun
+M_outside(alpha)     = 0.008 M_sun
+
+
+w13.0 (w2015)
+------------
+E_exp = 1.12 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.683 M_sun
+M_fallback           = 8.4243E-04 M_sun
+M_outside(Ni)        = 6.9072E-02 M_sun
+M_outside(Tr)        = 1.2370E-02 M_sun
+M_outside(alpha)     = 5.3920E-02 M_sun
+
+special trajectory:
+M_special            = 1.754 M_sun
+M_outside(Ni)        = 0.058 M_sun
+M_outside(Tr)        = 0.002 M_sun
+M_outside(alpha)     = 0.010 M_sun
+
+s13.1 (s2013)
+------------
+E_exp = 1.38 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.578 M_sun
+M_fallback           = 1.0059E-03 M_sun
+M_outside(Ni)        = 6.1787E-02 M_sun
+M_outside(Tr)        = 2.9637E-02 M_sun
+M_outside(alpha)     = 6.3083E-02 M_sun
+
+special trajectory:
+M_special            = 1.673 M_sun
+M_outside(Ni)        = 0.054 M_sun
+M_outside(Tr)        = 0.002 M_sun
+M_outside(alpha)     = 0.008 M_sun
+
+
+s13.2 (s2013)
+------------
+E_exp = 1.39 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.579 M_sun
+M_fallback           = 1.0131E-03 M_sun
+M_outside(Ni)        = 6.2222E-02 M_sun
+M_outside(Tr)        = 3.0586E-02 M_sun
+M_outside(alpha)     = 6.3853E-02 M_sun
+
+special trajectory:
+M_special            = 1.675 M_sun
+M_outside(Ni)        = 0.054 M_sun
+M_outside(Tr)        = 0.002 M_sun
+M_outside(alpha)     = 0.009 M_sun
+
+
+s13.3 (s2013)
+------------
+E_exp = 1.35 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.584 M_sun
+M_fallback           = 1.0281E-03 M_sun
+M_outside(Ni)        = 6.2432E-02 M_sun
+M_outside(Tr)        = 2.8626E-02 M_sun
+M_outside(alpha)     = 6.2177E-02 M_sun
+
+special trajectory:
+M_special            = 1.678 M_sun
+M_outside(Ni)        = 0.054 M_sun
+M_outside(Tr)        = 0.001 M_sun
+M_outside(alpha)     = 0.007 M_sun
+
+
+s13.4 (s2013)
+------------
+E_exp = 1.26 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.611 M_sun
+M_fallback           = 1.1323E-03 M_sun
+M_outside(Ni)        = 6.3907E-02 M_sun
+M_outside(Tr)        = 2.3638E-02 M_sun
+M_outside(alpha)     = 5.8478E-02 M_sun
+
+special trajectory:
+M_special            = 1.697 M_sun
+M_outside(Ni)        = 0.055 M_sun
+M_outside(Tr)        = 0.001 M_sun
+M_outside(alpha)     = 0.008 M_sun
+
+
+s13.5 (s2013)
+------------
+E_exp = 1.32 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.615 M_sun
+M_fallback           = 1.1117E-03 M_sun
+M_outside(Ni)        = 6.5722E-02 M_sun
+M_outside(Tr)        = 2.5320E-02 M_sun
+M_outside(alpha)     = 6.0928E-02 M_sun
+
+special trajectory:
+M_special            = 1.705 M_sun
+M_outside(Ni)        = 0.056 M_sun
+M_outside(Tr)        = 0.001 M_sun
+M_outside(alpha)     = 0.008 M_sun
+
+
+s13.6 (s2013)
+------------
+E_exp = 1.31 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.642 M_sun
+M_fallback           = 1.0774E-03 M_sun
+M_outside(Ni)        = 7.1751E-02 M_sun
+M_outside(Tr)        = 2.2102E-02 M_sun
+M_outside(alpha)     = 6.0514E-02 M_sun
+
+special trajectory:
+M_special            = 1.729 M_sun
+M_outside(Ni)        = 0.061 M_sun
+M_outside(Tr)        = 0.001 M_sun
+M_outside(alpha)     = 0.008 M_sun
+
+
+s13.7 (s2013)
+------------
+E_exp = 1.29 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.646 M_sun
+M_fallback           = 1.0844E-03 M_sun
+M_outside(Ni)        = 7.2188E-02 M_sun
+M_outside(Tr)        = 2.1378E-02 M_sun
+M_outside(alpha)     = 6.0018E-02 M_sun
+
+special trajectory:
+M_special            = 1.732 M_sun
+M_outside(Ni)        = 0.062 M_sun
+M_outside(Tr)        = 0.002 M_sun
+M_outside(alpha)     = 0.009 M_sun
+
+
+s13.8 (s2013)
+------------
+E_exp = 1.27 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.665 M_sun
+M_fallback           = 1.0964E-03 M_sun
+M_outside(Ni)        = 7.3746E-02 M_sun
+M_outside(Tr)        = 1.9292E-02 M_sun
+M_outside(alpha)     = 5.9814E-02 M_sun
+
+special trajectory:
+M_special            = 1.750 M_sun
+M_outside(Ni)        = 0.063 M_sun
+M_outside(Tr)        = 0.001 M_sun
+M_outside(alpha)     = 0.009 M_sun
+
+
+s13.9 (s2013)
+------------
+E_exp = 1.21 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.670 M_sun
+M_fallback           = 1.1143E-03 M_sun
+M_outside(Ni)        = 7.1754E-02 M_sun
+M_outside(Tr)        = 1.7343E-02 M_sun
+M_outside(alpha)     = 5.7840E-02 M_sun
+
+special trajectory:
+M_special            = 1.751 M_sun
+M_outside(Ni)        = 0.060 M_sun
+M_outside(Tr)        = 0.001 M_sun
+M_outside(alpha)     = 0.008 M_sun
+
+
+s14.0 (s2013)
+------------
+E_exp = 1.20 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.685 M_sun
+M_fallback           = 1.1526E-03 M_sun
+M_outside(Ni)        = 7.2109E-02 M_sun
+M_outside(Tr)        = 1.6419E-02 M_sun
+M_outside(alpha)     = 5.7921E-02 M_sun
+
+special trajectory:
+M_special            = 1.765 M_sun
+M_outside(Ni)        = 0.061 M_sun
+M_outside(Tr)        = 0.001 M_sun
+M_outside(alpha)     = 0.009 M_sun
+
+
+s14.1 (s2013)
+------------
+E_exp = 1.18 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.699 M_sun
+M_fallback           = 1.2144E-03 M_sun
+M_outside(Ni)        = 7.1863E-02 M_sun
+M_outside(Tr)        = 1.5291E-02 M_sun
+M_outside(alpha)     = 5.7155E-02 M_sun
+
+special trajectory:
+M_special            = 1.777 M_sun
+M_outside(Ni)        = 0.059 M_sun
+M_outside(Tr)        = 0.001 M_sun
+M_outside(alpha)     = 0.008 M_sun
+
+
+s14.2 (s2013)
+------------
+E_exp = 1.12 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.704 M_sun
+M_fallback           = 1.2573E-03 M_sun
+M_outside(Ni)        = 7.0486E-02 M_sun
+M_outside(Tr)        = 1.3271E-02 M_sun
+M_outside(alpha)     = 5.5070E-02 M_sun
+
+special trajectory:
+M_special            = 1.778 M_sun
+M_outside(Ni)        = 0.058 M_sun
+M_outside(Tr)        = 0.001 M_sun
+M_outside(alpha)     = 0.008 M_sun
+
+
+s14.3 (s2013)
+------------
+E_exp = 1.15 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.710 M_sun
+M_fallback           = 1.2663E-03 M_sun
+M_outside(Ni)        = 7.2352E-02 M_sun
+M_outside(Tr)        = 1.4060E-02 M_sun
+M_outside(alpha)     = 5.6175E-02 M_sun
+
+special trajectory:
+M_special            = 1.786 M_sun
+M_outside(Ni)        = 0.060 M_sun
+M_outside(Tr)        = 0.001 M_sun
+M_outside(alpha)     = 0.009 M_sun
+
+
+s14.4 (s2013)
+------------
+E_exp = 1.13 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.724 M_sun
+M_fallback           = 1.3304E-03 M_sun
+M_outside(Ni)        = 7.3927E-02 M_sun
+M_outside(Tr)        = 1.2115E-02 M_sun
+M_outside(alpha)     = 5.5347E-02 M_sun
+
+special trajectory:
+M_special            = 1.798 M_sun
+M_outside(Ni)        = 0.061 M_sun
+M_outside(Tr)        = 0.001 M_sun
+M_outside(alpha)     = 0.009 M_sun
+
+
+s14.5 (s2013)
+------------
+E_exp = 1.02 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.767 M_sun
+M_fallback           = 1.5090E-03 M_sun
+M_outside(Ni)        = 8.4320E-02 M_sun
+M_outside(Tr)        = 1.9112E-03 M_sun
+M_outside(alpha)     = 5.1120E-02 M_sun
+
+special trajectory:
+M_special            = 1.831 M_sun
+M_outside(Ni)        = 0.067 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.010 M_sun
+
+
+s14.6 (s2013)
+------------
+E_exp = 1.07 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.755 M_sun
+M_fallback           = 1.3880E-03 M_sun
+M_outside(Ni)        = 7.6936E-02 M_sun
+M_outside(Tr)        = 7.2399E-03 M_sun
+M_outside(alpha)     = 5.3563E-02 M_sun
+
+special trajectory:
+M_special            = 1.824 M_sun
+M_outside(Ni)        = 0.063 M_sun
+M_outside(Tr)        = 0.001 M_sun
+M_outside(alpha)     = 0.010 M_sun
+
+
+s14.7 (s2013)
+------------
+E_exp = 0.96 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.784 M_sun
+M_fallback           = 1.5960E-03 M_sun
+M_outside(Ni)        = 8.3830E-02 M_sun
+M_outside(Tr)        = 1.8897E-04 M_sun
+M_outside(alpha)     = 4.8291E-02 M_sun
+
+special trajectory:
+M_special            = 1.841 M_sun
+M_outside(Ni)        = 0.068 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.010 M_sun
+
+
+s14.8 (s2013)
+------------
+E_exp = 0.99 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.788 M_sun
+M_fallback           = 1.4811E-03 M_sun
+M_outside(Ni)        = 8.1455E-02 M_sun
+M_outside(Tr)        = 1.3344E-04 M_sun
+M_outside(alpha)     = 5.0682E-02 M_sun
+
+special trajectory:
+M_special            = 1.850 M_sun
+M_outside(Ni)        = 0.065 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.010 M_sun
+
+
+s14.9 (s2013)
+------------
+E_exp = 0.99 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.791 M_sun
+M_fallback           = 1.5188E-03 M_sun
+M_outside(Ni)        = 8.3502E-02 M_sun
+M_outside(Tr)        = 1.5166E-04 M_sun
+M_outside(alpha)     = 5.0387E-02 M_sun
+
+special trajectory:
+M_special            = 1.852 M_sun
+M_outside(Ni)        = 0.067 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.010 M_sun
+
+
+s15.0 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s15.1 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s15.2 (s2013)
+------------
+E_exp = 0.81 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.569 M_sun
+M_fallback           = 2.7776E-03 M_sun
+M_outside(Ni)        = 6.3182E-02 M_sun
+M_outside(Tr)        = 1.5419E-02 M_sun
+M_outside(alpha)     = 4.1152E-02 M_sun
+
+special trajectory:
+M_special            = 1.628 M_sun
+M_outside(Ni)        = 0.056 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.007 M_sun
+
+
+s15.3 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s15.4 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s15.5 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s15.6 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s15.7 (s2013)
+------------
+E_exp = 0.54 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.639 M_sun
+M_fallback           = 4.6010E-03 M_sun
+M_outside(Ni)        = 6.2604E-02 M_sun
+M_outside(Tr)        = 0.0000E+00 M_sun
+M_outside(alpha)     = 3.0364E-02 M_sun
+
+special trajectory:
+M_special            = 1.681 M_sun
+M_outside(Ni)        = 0.047 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.006 M_sun
+
+
+s15.8 (s2013)
+------------
+E_exp = 0.65 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.634 M_sun
+M_fallback           = 3.6421E-03 M_sun
+M_outside(Ni)        = 7.5601E-02 M_sun
+M_outside(Tr)        = 0.0000E+00 M_sun
+M_outside(alpha)     = 3.4021E-02 M_sun
+
+special trajectory:
+M_special            = 1.675 M_sun
+M_outside(Ni)        = 0.062 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.009 M_sun
+
+
+s15.9 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s16.0 (s2013)
+------------
+E_exp = 0.56 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.656 M_sun
+M_fallback           = 4.8890E-03 M_sun
+M_outside(Ni)        = 6.5211E-02 M_sun
+M_outside(Tr)        = 0.0000E+00 M_sun
+M_outside(alpha)     = 3.1081E-02 M_sun
+
+special trajectory:
+M_special            = 1.698 M_sun
+M_outside(Ni)        = 0.050 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.006 M_sun
+
+
+s16.1 (s2013)
+------------
+E_exp = 0.58 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.643 M_sun
+M_fallback           = 4.4253E-03 M_sun
+M_outside(Ni)        = 6.6674E-02 M_sun
+M_outside(Tr)        = 0.0000E+00 M_sun
+M_outside(alpha)     = 3.2094E-02 M_sun
+
+special trajectory:
+M_special            = 1.686 M_sun
+M_outside(Ni)        = 0.052 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.007 M_sun
+
+
+s16.2 (s2013)
+------------
+E_exp = 0.59 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.658 M_sun
+M_fallback           = 4.5897E-03 M_sun
+M_outside(Ni)        = 6.7905E-02 M_sun
+M_outside(Tr)        = 0.0000E+00 M_sun
+M_outside(alpha)     = 3.2638E-02 M_sun
+
+special trajectory:
+M_special            = 1.702 M_sun
+M_outside(Ni)        = 0.053 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.007 M_sun
+
+
+s16.3 (s2013)
+------------
+E_exp = 0.59 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.656 M_sun
+M_fallback           = 4.7112E-03 M_sun
+M_outside(Ni)        = 6.8809E-02 M_sun
+M_outside(Tr)        = 0.0000E+00 M_sun
+M_outside(alpha)     = 3.2385E-02 M_sun
+
+special trajectory:
+M_special            = 1.700 M_sun
+M_outside(Ni)        = 0.053 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.006 M_sun
+
+
+s16.4 (s2013)
+------------
+E_exp = 0.60 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.676 M_sun
+M_fallback           = 4.6041E-03 M_sun
+M_outside(Ni)        = 6.0191E-02 M_sun
+M_outside(Tr)        = 4.6051E-03 M_sun
+M_outside(alpha)     = 3.4002E-02 M_sun
+
+special trajectory:
+M_special            = 1.723 M_sun
+M_outside(Ni)        = 0.048 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.006 M_sun
+
+
+s16.5 (s2013)
+------------
+E_exp = 0.71 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.654 M_sun
+M_fallback           = 3.7681E-03 M_sun
+M_outside(Ni)        = 8.3330E-02 M_sun
+M_outside(Tr)        = 0.0000E+00 M_sun
+M_outside(alpha)     = 3.6130E-02 M_sun
+
+special trajectory:
+M_special            = 1.695 M_sun
+M_outside(Ni)        = 0.071 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.010 M_sun
+
+
+s16.6 (s2013)
+------------
+E_exp = 0.59 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.664 M_sun
+M_fallback           = 5.0456E-03 M_sun
+M_outside(Ni)        = 7.0057E-02 M_sun
+M_outside(Tr)        = 0.0000E+00 M_sun
+M_outside(alpha)     = 3.2757E-02 M_sun
+
+special trajectory:
+M_special            = 1.707 M_sun
+M_outside(Ni)        = 0.055 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.007 M_sun
+
+
+s16.7 (s2013)
+------------
+E_exp = 0.57 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.661 M_sun
+M_fallback           = 5.2864E-03 M_sun
+M_outside(Ni)        = 6.7414E-02 M_sun
+M_outside(Tr)        = 0.0000E+00 M_sun
+M_outside(alpha)     = 3.2021E-02 M_sun
+
+special trajectory:
+M_special            = 1.704 M_sun
+M_outside(Ni)        = 0.053 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.007 M_sun
+
+
+s16.8 (s2013)
+------------
+E_exp = 0.58 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.677 M_sun
+M_fallback           = 5.2659E-03 M_sun
+M_outside(Ni)        = 6.9303E-02 M_sun
+M_outside(Tr)        = 8.7340E-05 M_sun
+M_outside(alpha)     = 3.2641E-02 M_sun
+
+special trajectory:
+M_special            = 1.720 M_sun
+M_outside(Ni)        = 0.054 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.007 M_sun
+
+
+s16.9 (s2013)
+------------
+E_exp = 0.69 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.671 M_sun
+M_fallback           = 4.3501E-03 M_sun
+M_outside(Ni)        = 6.5864E-02 M_sun
+M_outside(Tr)        = 6.3831E-03 M_sun
+M_outside(alpha)     = 3.7937E-02 M_sun
+
+special trajectory:
+M_special            = 1.724 M_sun
+M_outside(Ni)        = 0.053 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.007 M_sun
+
+
+s17.0 (s2013)
+------------
+E_exp = 0.53 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.696 M_sun
+M_fallback           = 6.5193E-03 M_sun
+M_outside(Ni)        = 6.3355E-02 M_sun
+M_outside(Tr)        = 1.7731E-04 M_sun
+M_outside(alpha)     = 3.0057E-02 M_sun
+
+special trajectory:
+M_special            = 1.735 M_sun
+M_outside(Ni)        = 0.050 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.006 M_sun
+
+
+s17.1 (s2013)
+------------
+E_exp = 0.52 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.711 M_sun
+M_fallback           = 6.8775E-03 M_sun
+M_outside(Ni)        = 6.2967E-02 M_sun
+M_outside(Tr)        = 6.1628E-04 M_sun
+M_outside(alpha)     = 2.9874E-02 M_sun
+
+special trajectory:
+M_special            = 1.749 M_sun
+M_outside(Ni)        = 0.051 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.006 M_sun
+
+
+s17.2 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s17.3 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s17.4 (s2013)
+------------
+E_exp = 0.53 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.701 M_sun
+M_fallback           = 7.5984E-03 M_sun
+M_outside(Ni)        = 6.8182E-02 M_sun
+M_outside(Tr)        = 2.2217E-04 M_sun
+M_outside(alpha)     = 2.9082E-02 M_sun
+
+special trajectory:
+M_special            = 1.735 M_sun
+M_outside(Ni)        = 0.058 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.008 M_sun
+
+
+s17.5 (s2013)
+------------
+E_exp = 0.47 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.694 M_sun
+M_fallback           = 9.1518E-03 M_sun
+M_outside(Ni)        = 6.1951E-02 M_sun
+M_outside(Tr)        = 1.4616E-04 M_sun
+M_outside(alpha)     = 2.6069E-02 M_sun
+
+special trajectory:
+M_special            = 1.727 M_sun
+M_outside(Ni)        = 0.051 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.006 M_sun
+
+
+s17.6 (s2013)
+------------
+E_exp = 0.52 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.697 M_sun
+M_fallback           = 8.0858E-03 M_sun
+M_outside(Ni)        = 6.6958E-02 M_sun
+M_outside(Tr)        = 1.9553E-04 M_sun
+M_outside(alpha)     = 2.8451E-02 M_sun
+
+special trajectory:
+M_special            = 1.731 M_sun
+M_outside(Ni)        = 0.056 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.007 M_sun
+
+
+s17.7 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s17.8 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s17.9 (s2013)
+------------
+E_exp = 1.20 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.782 M_sun
+M_fallback           = 1.3294E-03 M_sun
+M_outside(Ni)        = 8.0480E-02 M_sun
+M_outside(Tr)        = 1.3608E-02 M_sun
+M_outside(alpha)     = 6.1164E-02 M_sun
+
+special trajectory:
+M_special            = 1.864 M_sun
+M_outside(Ni)        = 0.066 M_sun
+M_outside(Tr)        = 0.001 M_sun
+M_outside(alpha)     = 0.009 M_sun
+
+
+s18.0 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s18.1 (s2013)
+------------
+E_exp = 1.14 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.802 M_sun
+M_fallback           = 1.5202E-03 M_sun
+M_outside(Ni)        = 7.9286E-02 M_sun
+M_outside(Tr)        = 1.1414E-02 M_sun
+M_outside(alpha)     = 5.9448E-02 M_sun
+
+special trajectory:
+M_special            = 1.881 M_sun
+M_outside(Ni)        = 0.065 M_sun
+M_outside(Tr)        = 0.001 M_sun
+M_outside(alpha)     = 0.009 M_sun
+
+
+s18.2 (s2013)
+------------
+E_exp = 1.18 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.781 M_sun
+M_fallback           = 1.5278E-03 M_sun
+M_outside(Ni)        = 7.8387E-02 M_sun
+M_outside(Tr)        = 1.3706E-02 M_sun
+M_outside(alpha)     = 6.0828E-02 M_sun
+
+special trajectory:
+M_special            = 1.863 M_sun
+M_outside(Ni)        = 0.065 M_sun
+M_outside(Tr)        = 0.001 M_sun
+M_outside(alpha)     = 0.009 M_sun
+
+
+s18.3 (s2013)
+------------
+E_exp = 1.08 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.823 M_sun
+M_fallback           = 2.7422E-03 M_sun
+M_outside(Ni)        = 7.9457E-02 M_sun
+M_outside(Tr)        = 8.9573E-03 M_sun
+M_outside(alpha)     = 5.5570E-02 M_sun
+
+special trajectory:
+M_special            = 1.895 M_sun
+M_outside(Ni)        = 0.066 M_sun
+M_outside(Tr)        = 0.001 M_sun
+M_outside(alpha)     = 0.009 M_sun
+
+
+s18.4 (s2013)
+------------
+E_exp = 1.04 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.837 M_sun
+M_fallback           = 2.8564E-03 M_sun
+M_outside(Ni)        = 8.0134E-02 M_sun
+M_outside(Tr)        = 7.5487E-03 M_sun
+M_outside(alpha)     = 5.3709E-02 M_sun
+
+special trajectory:
+M_special            = 1.906 M_sun
+M_outside(Ni)        = 0.066 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.009 M_sun
+
+
+s18.5 (s2013)
+------------
+E_exp = 0.60 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.644 M_sun
+M_fallback           = 8.4159E-03 M_sun
+M_outside(Ni)        = 7.3795E-02 M_sun
+M_outside(Tr)        = 0.0000E+00 M_sun
+M_outside(alpha)     = 3.0397E-02 M_sun
+
+special trajectory:
+M_special            = 1.680 M_sun
+M_outside(Ni)        = 0.061 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.009 M_sun
+
+
+s18.6 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s18.7 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s18.8 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s18.9 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s19.0 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s19.1 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s19.2 (s2013)
+------------
+E_exp = 0.75 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.703 M_sun
+M_fallback           = 5.1629E-03 M_sun
+M_outside(Ni)        = 8.1283E-02 M_sun
+M_outside(Tr)        = 1.7035E-04 M_sun
+M_outside(alpha)     = 3.9902E-02 M_sun
+
+special trajectory:
+M_special            = 1.752 M_sun
+M_outside(Ni)        = 0.066 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.009 M_sun
+
+
+s19.3 (s2013)
+------------
+E_exp = 1.01 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.537 M_sun
+M_fallback           = 3.7550E-03 M_sun
+M_outside(Ni)        = 5.5054E-02 M_sun
+M_outside(Tr)        = 2.7246E-02 M_sun
+M_outside(alpha)     = 5.2138E-02 M_sun
+
+special trajectory:
+M_special            = 1.617 M_sun
+M_outside(Ni)        = 0.052 M_sun
+M_outside(Tr)        = 0.001 M_sun
+M_outside(alpha)     = 0.007 M_sun
+
+
+s19.4 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s19.5 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s19.6 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s19.7 (s2013)
+------------
+E_exp = 1.64 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.388 M_sun
+M_fallback           = 1.7201E-03 M_sun
+M_outside(Ni)        = 4.0578E-02 M_sun
+M_outside(Tr)        = 6.4561E-02 M_sun
+M_outside(alpha)     = 7.6587E-02 M_sun
+
+special trajectory:
+M_special            = 1.522 M_sun
+M_outside(Ni)        = 0.038 M_sun
+M_outside(Tr)        = 0.012 M_sun
+M_outside(alpha)     = 0.004 M_sun
+
+
+s19.8 (s2013)
+------------
+E_exp = 1.70 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.466 M_sun
+M_fallback           = 2.1070E-03 M_sun
+M_outside(Ni)        = 5.7898E-02 M_sun
+M_outside(Tr)        = 6.2795E-02 M_sun
+M_outside(alpha)     = 7.8175E-02 M_sun
+
+special trajectory:
+M_special            = 1.595 M_sun
+M_outside(Ni)        = 0.056 M_sun
+M_outside(Tr)        = 0.013 M_sun
+M_outside(alpha)     = 0.008 M_sun
+
+
+s19.9 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s20.0 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s20.1 (s2013)
+------------
+E_exp = 0.66 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.860 M_sun
+M_fallback           = 9.9314E-03 M_sun
+M_outside(Ni)        = 9.1965E-02 M_sun
+M_outside(Tr)        = 0.0000E+00 M_sun
+M_outside(alpha)     = 3.4586E-02 M_sun
+
+special trajectory:
+M_special            = 1.900 M_sun
+M_outside(Ni)        = 0.080 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.009 M_sun
+
+
+s20.2 (s2013)
+------------
+E_exp = 1.68 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.448 M_sun
+M_fallback           = 1.9950E-03 M_sun
+M_outside(Ni)        = 4.6002E-02 M_sun
+M_outside(Tr)        = 6.3355E-02 M_sun
+M_outside(alpha)     = 7.8360E-02 M_sun
+
+special trajectory:
+M_special            = 1.582 M_sun
+M_outside(Ni)        = 0.044 M_sun
+M_outside(Tr)        = 0.013 M_sun
+M_outside(alpha)     = 0.006 M_sun
+
+
+s20.3 (s2013)
+------------
+E_exp = 1.21 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.570 M_sun
+M_fallback           = 5.4722E-03 M_sun
+M_outside(Ni)        = 8.2703E-02 M_sun
+M_outside(Tr)        = 3.2093E-02 M_sun
+M_outside(alpha)     = 5.6533E-02 M_sun
+
+special trajectory:
+M_special            = 1.659 M_sun
+M_outside(Ni)        = 0.077 M_sun
+M_outside(Tr)        = 0.002 M_sun
+M_outside(alpha)     = 0.009 M_sun
+
+
+s20.4 (s2013)
+------------
+E_exp = 1.64 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.400 M_sun
+M_fallback           = 1.9166E-03 M_sun
+M_outside(Ni)        = 4.0005E-02 M_sun
+M_outside(Tr)        = 6.4848E-02 M_sun
+M_outside(alpha)     = 7.7015E-02 M_sun
+
+special trajectory:
+M_special            = 1.535 M_sun
+M_outside(Ni)        = 0.038 M_sun
+M_outside(Tr)        = 0.012 M_sun
+M_outside(alpha)     = 0.004 M_sun
+
+
+s20.5 (s2013)
+------------
+E_exp = 1.62 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.389 M_sun
+M_fallback           = 1.9150E-03 M_sun
+M_outside(Ni)        = 3.6910E-02 M_sun
+M_outside(Tr)        = 6.4484E-02 M_sun
+M_outside(alpha)     = 7.6014E-02 M_sun
+
+special trajectory:
+M_special            = 1.523 M_sun
+M_outside(Ni)        = 0.034 M_sun
+M_outside(Tr)        = 0.013 M_sun
+M_outside(alpha)     = 0.004 M_sun
+
+
+s20.6 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s20.7 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s20.8 (s2013)
+------------
+E_exp = 0.44 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.750 M_sun
+M_fallback           = 1.9418E-02 M_sun
+M_outside(Ni)        = 5.1574E-02 M_sun
+M_outside(Tr)        = 4.6952E-04 M_sun
+M_outside(alpha)     = 2.0490E-02 M_sun
+
+special trajectory:
+M_special            = 1.774 M_sun
+M_outside(Ni)        = 0.044 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.006 M_sun
+
+
+s20.9 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s21.0 (s2013)
+------------
+E_exp = 0.55 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.623 M_sun
+M_fallback           = 1.5821E-02 M_sun
+M_outside(Ni)        = 5.2508E-02 M_sun
+M_outside(Tr)        = 9.3533E-03 M_sun
+M_outside(alpha)     = 2.6006E-02 M_sun
+
+special trajectory:
+M_special            = 1.662 M_sun
+M_outside(Ni)        = 0.045 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.006 M_sun
+
+
+s21.1 (s2013)
+------------
+E_exp = 0.56 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.658 M_sun
+M_fallback           = 1.3843E-02 M_sun
+M_outside(Ni)        = 5.8753E-02 M_sun
+M_outside(Tr)        = 5.1324E-03 M_sun
+M_outside(alpha)     = 2.8190E-02 M_sun
+
+special trajectory:
+M_special            = 1.698 M_sun
+M_outside(Ni)        = 0.048 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.006 M_sun
+
+
+s21.2 (s2013)
+------------
+E_exp = 0.56 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.925 M_sun
+M_fallback           = 1.0824E-02 M_sun
+M_outside(Ni)        = 5.4966E-02 M_sun
+M_outside(Tr)        = 0.0000E+00 M_sun
+M_outside(alpha)     = 3.3581E-02 M_sun
+
+special trajectory:
+M_special            = 1.962 M_sun
+M_outside(Ni)        = 0.047 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.007 M_sun
+
+
+s21.3 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s21.4 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s21.5 (s2013)
+------------
+E_exp = 0.52 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.740 M_sun
+M_fallback           = 1.9658E-02 M_sun
+M_outside(Ni)        = 6.9330E-02 M_sun
+M_outside(Tr)        = 6.1519E-04 M_sun
+M_outside(alpha)     = 2.3564E-02 M_sun
+
+special trajectory:
+M_special            = 1.768 M_sun
+M_outside(Ni)        = 0.060 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.008 M_sun
+
+
+s21.6 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s21.7 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s21.8 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s21.9 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s22.0 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s22.1 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s22.2 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s22.3 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s22.4 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s22.5 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s22.6 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s22.7 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s22.8 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s22.9 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s23.0 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s23.1 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s23.2 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s23.3 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s23.4 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s23.5 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s23.6 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s23.7 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s23.8 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s23.9 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s24.0 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s24.1 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s24.2 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s24.3 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s24.4 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s24.5 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s24.6 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s24.7 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s24.8 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s24.9 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s25.0 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s25.1 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s25.2 (s2013)
+------------
+E_exp = 1.24 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.780 M_sun
+M_fallback           = 1.1261E-02 M_sun
+M_outside(Ni)        = 1.2290E-01 M_sun
+M_outside(Tr)        = 1.9159E-02 M_sun
+M_outside(alpha)     = 5.7628E-02 M_sun
+
+special trajectory:
+M_special            = 1.861 M_sun
+M_outside(Ni)        = 0.111 M_sun
+M_outside(Tr)        = 0.001 M_sun
+M_outside(alpha)     = 0.012 M_sun
+
+
+s25.3 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s25.4 (s2013)
+------------
+E_exp = 0.94 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.859 M_sun
+M_fallback           = 1.5974E-02 M_sun
+M_outside(Ni)        = 1.1801E-01 M_sun
+M_outside(Tr)        = 8.1456E-03 M_sun
+M_outside(alpha)     = 4.3324E-02 M_sun
+
+special trajectory:
+M_special            = 1.916 M_sun
+M_outside(Ni)        = 0.104 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.011 M_sun
+
+
+s25.5 (s2013)
+------------
+E_exp = 1.24 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.784 M_sun
+M_fallback           = 1.1540E-02 M_sun
+M_outside(Ni)        = 1.2554E-01 M_sun
+M_outside(Tr)        = 1.8194E-02 M_sun
+M_outside(alpha)     = 5.7140E-02 M_sun
+
+special trajectory:
+M_special            = 1.863 M_sun
+M_outside(Ni)        = 0.113 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.012 M_sun
+
+
+s25.6 (s2013)
+------------
+E_exp = 0.76 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.832 M_sun
+M_fallback           = 1.9038E-02 M_sun
+M_outside(Ni)        = 8.2824E-02 M_sun
+M_outside(Tr)        = 5.0008E-03 M_sun
+M_outside(alpha)     = 3.7228E-02 M_sun
+
+special trajectory:
+M_special            = 1.882 M_sun
+M_outside(Ni)        = 0.070 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.009 M_sun
+
+
+s25.7 (s2013)
+------------
+E_exp = 1.38 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.621 M_sun
+M_fallback           = 9.2678E-03 M_sun
+M_outside(Ni)        = 5.9737E-02 M_sun
+M_outside(Tr)        = 4.7904E-02 M_sun
+M_outside(alpha)     = 6.6919E-02 M_sun
+
+special trajectory:
+M_special            = 1.731 M_sun
+M_outside(Ni)        = 0.054 M_sun
+M_outside(Tr)        = 0.010 M_sun
+M_outside(alpha)     = 0.008 M_sun
+
+
+s25.8 (s2013)
+------------
+E_exp = 1.39 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.604 M_sun
+M_fallback           = 8.5849E-03 M_sun
+M_outside(Ni)        = 5.5406E-02 M_sun
+M_outside(Tr)        = 4.9979E-02 M_sun
+M_outside(alpha)     = 6.8370E-02 M_sun
+
+special trajectory:
+M_special            = 1.717 M_sun
+M_outside(Ni)        = 0.051 M_sun
+M_outside(Tr)        = 0.011 M_sun
+M_outside(alpha)     = 0.008 M_sun
+
+
+s25.9 (s2013)
+------------
+E_exp = 1.21 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.675 M_sun
+M_fallback           = 1.4497E-02 M_sun
+M_outside(Ni)        = 1.0738E-01 M_sun
+M_outside(Tr)        = 3.0156E-02 M_sun
+M_outside(alpha)     = 5.4375E-02 M_sun
+
+special trajectory:
+M_special            = 1.761 M_sun
+M_outside(Ni)        = 0.099 M_sun
+M_outside(Tr)        = 0.001 M_sun
+M_outside(alpha)     = 0.010 M_sun
+
+
+s26.0 (s2013)
+------------
+E_exp = 0.91 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.751 M_sun
+M_fallback           = 1.8836E-02 M_sun
+M_outside(Ni)        = 1.0010E-01 M_sun
+M_outside(Tr)        = 1.7135E-02 M_sun
+M_outside(alpha)     = 4.2634E-02 M_sun
+
+special trajectory:
+M_special            = 1.816 M_sun
+M_outside(Ni)        = 0.089 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.009 M_sun
+
+
+s26.1 (s2013)
+------------
+E_exp = 0.97 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.748 M_sun
+M_fallback           = 1.7863E-02 M_sun
+M_outside(Ni)        = 1.0697E-01 M_sun
+M_outside(Tr)        = 1.8337E-02 M_sun
+M_outside(alpha)     = 4.4748E-02 M_sun
+
+special trajectory:
+M_special            = 1.816 M_sun
+M_outside(Ni)        = 0.096 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.010 M_sun
+
+
+s26.2 (s2013)
+------------
+E_exp = 0.98 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.754 M_sun
+M_fallback           = 1.7931E-02 M_sun
+M_outside(Ni)        = 1.1063E-01 M_sun
+M_outside(Tr)        = 1.7806E-02 M_sun
+M_outside(alpha)     = 4.5382E-02 M_sun
+
+special trajectory:
+M_special            = 1.822 M_sun
+M_outside(Ni)        = 0.099 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.010 M_sun
+
+
+s26.3 (s2013)
+------------
+E_exp = 0.78 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.842 M_sun
+M_fallback           = 2.8685E-02 M_sun
+M_outside(Ni)        = 1.3288E-01 M_sun
+M_outside(Tr)        = 0.0000E+00 M_sun
+M_outside(alpha)     = 2.7214E-02 M_sun
+
+special trajectory:
+M_special            = 1.869 M_sun
+M_outside(Ni)        = 0.121 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.014 M_sun
+
+
+s26.4 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s26.5 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s26.6 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s26.7 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s26.8 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s26.9 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s27.0 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s27.1 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s27.2 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s27.3 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s27.4 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s27.5 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s27.6 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s27.7 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s27.8 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s27.9 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s28.0 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s28.1 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s28.2 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s28.3 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s28.4 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s28.5 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s28.6 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s28.7 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s28.8 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s28.9 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s29.0 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s29.1 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s29.2 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s29.3 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s29.4 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s29.5 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s29.6 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s29.7 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s29.8 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s29.9 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s30.0 (s2013)
+------------
+E_exp = 0.00 foe
+
+
+s31 (s2007)
+------------
+E_exp = 0.00 foe
+
+
+s32 (s2007)
+------------
+E_exp = 0.00 foe
+
+
+s33 (s2007)
+------------
+E_exp = 0.00 foe
+
+
+s35 (s2007)
+------------
+E_exp = 0.00 foe
+
+
+s40 (s2007)
+------------
+E_exp = 0.00 foe
+
+
+s45 (s2007)
+------------
+E_exp = 0.00 foe
+
+
+s50 (s2007)
+------------
+E_exp = 0.00 foe
+
+
+s55 (s2007)
+------------
+E_exp = 0.00 foe
+
+
+s60 (s2007)
+------------
+E_exp = 0.30 foe
+
+With fallback:
+M_mass_cut_after_fb  = 4.648 M_sun
+M_fallback           = 2.8182E+00 M_sun
+M_outside(Ni)        = 1.0742E-04 M_sun
+M_outside(Tr)        = 0.0000E+00 M_sun
+M_outside(alpha)     = 1.6851E-05 M_sun
+
+special trajectory:
+M_special            = 1.859 M_sun
+M_outside(Ni)        = 0.059 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.008 M_sun
+
+
+s70 (s2007)
+------------
+E_exp = 0.00 foe
+
+
+s80 (s2007)
+------------
+E_exp = 0.00 foe
+
+
+s100 (s2007)
+------------
+E_exp = 0.00 foe
+
+
+s120 (s2007)
+------------
+E_exp = 0.69 foe
+
+With fallback:
+M_mass_cut_after_fb  = 1.760 M_sun
+M_fallback           = 9.5728E-03 M_sun
+M_outside(Ni)        = 6.6914E-02 M_sun
+M_outside(Tr)        = 3.1147E-04 M_sun
+M_outside(alpha)     = 3.4240E-02 M_sun
+
+special trajectory:
+M_special            = 1.802 M_sun
+M_outside(Ni)        = 0.055 M_sun
+M_outside(Tr)        = 0.000 M_sun
+M_outside(alpha)     = 0.007 M_sun

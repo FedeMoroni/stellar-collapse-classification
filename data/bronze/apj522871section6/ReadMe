@@ -1,0 +1,36 @@
+================================================================================
+Title: Core-Collapse Supernovae from 9 to 120 Solar Masses Based 
+       on Neutrino-powered Explosions  
+Authors: Sukhbold T., Ertl T., Woosley S.E., Brown J.M., Janka H. 
+================================================================================
+Description of contents: nucleosynthesis_yields/ (179Mb)
+  Z9.6/
+  W18/
+  N20/
+  - Z9.6, W18 and N20 engine results were post-processed with KEPLER to 
+    obtain these. The tables consist from two segments:
+    1) top segment lists ejecta and wind contributions for all 
+       stable isotopes (after all radioactivity decayed).
+    2) bottom segment lists *select* 20 radioactive isotopes:
+        c14, na22, al26, si32, cl36, ar39,  k40, ca41, ca45, ti44, 
+        v49, mn53, mn54, fe55, fe60, co60, ni56, ni57, ni59, ni63
+       most of these are picked on the basis that they have half-lives 
+       longer than ~ 1 Myr and are important to the light curve.
+    Note that the top segment varies in size, and so the tables for different 
+    models are not necessarily of the same size. Please get in touch with us 
+    if you're interested in isotopes that are not listed in the bottom segment. 
+  implosions/
+  - the imploded models contribute through their winds at least, and so these 
+    files list wind contributions for all implosions of the W18 engine. The 
+    Z9.6 engine did not have any implosions (everything exploded) and since 
+    the W18 engine is weaker than N20, these listed implosions include all of 
+    the imploded models from N20.
+  sample_full_zonal_yields/
+  - full zonal yield information for four sample models, 200 seconds after the 
+    explosion (before any artificial mixing).
+
+System requirements:  All files are ASCII tables. 
+
+Additional comments:  The units are of course in solar masses. 
+
+================================================================================

@@ -1,0 +1,27 @@
+================================================================================
+Title: Core-Collapse Supernovae from 9 to 120 Solar Masses Based 
+       on Neutrino-powered Explosions  
+Authors: Sukhbold T., Ertl T., Woosley S.E., Brown J.M., Janka H. 
+================================================================================
+Description of contents: progenitor_models/ (167Mb)
+  these are 200 progenitor models from 9 to 120 solar masses. Note that the 
+  mass increments are variable. Different pieces are taken directly or based 
+  on the models from previous studies:
+      9-13      = based on Woosley & Heger (2015)    [arXiv:1505.06712]
+      13.1-14.9 = based on Sukhbold & Woosley (2014) [arXiv:1311.6546]
+      15-30     = from     Sukhbold & Woosley (2014) [arXiv:1311.6546]
+      >30       = from     Woosley & Heger (2007)    [arXiv:astro-ph/0702176]
+  All models are calculated by the KEPLER code. Across different studies 
+  obviously the code changes, but we assure that the changes are minimal for 
+  the above. In the paper we have presented several 'extra' models to 
+  demonstrate the agreement, especially between WH15 and SW14 models 
+  (Section 2). Those are not provided here, but feel free to request them if 
+  you're interested. 
+
+System requirements: All files are ASCII tables.
+
+Additional comments: Please get in touch with us if you're interested in 
+the full zonal information from the big network - i.e. thousands of isotopes 
+per each zone. 
+
+================================================================================
