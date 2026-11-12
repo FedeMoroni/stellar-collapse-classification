@@ -56,6 +56,7 @@ def parse_float(value: str) -> float | None:
 
 
 def split_columns(line: str) -> list[str]:
+    # The source tables use groups of spaces to separate fields.
     return re.split(r"\s{2,}", line.strip())
 
 
@@ -133,6 +134,7 @@ def parse_presn_file(path: Path) -> dict:
     header_columns = split_columns(header_line)
     isotope_names = header_columns[14:]
 
+    # Keep only the numbered stellar zones, from the center outwards.
     rows = []
     for line in lines:
         if not re.match(r"\s*\d+:", line):
@@ -229,6 +231,7 @@ def parse_presn_file(path: Path) -> dict:
         ),
     }
 
+    # Sample each profile at fixed enclosed masses for comparable features.
     for target in MASS_TARGETS:
         zone = nearest_zone(rows, target)
         suffix = str(target).replace(".", "p")
@@ -255,6 +258,7 @@ def parse_outcome_file(path: Path) -> list[dict]:
     blocks = []
     current = []
 
+    # Each model starts a block that contains its explosion results.
     for line in lines:
         if re.match(r"^[a-z]\d+(?:\.\d+)? \(", line.strip()):
             if current:
@@ -274,6 +278,7 @@ def parse_outcome_file(path: Path) -> list[dict]:
         model_name = OUTCOME_MODEL_ALIASES.get(result_model_name, result_model_name)
         e_exp_match = re.search(r"E_exp\s*=\s*([0-9.E+-]+)", text)
         e_exp = float(e_exp_match.group(1)) if e_exp_match else None
+        # Implosions have no positive explosion energy in these source files.
         is_black_hole = e_exp is None or e_exp <= 0.0
 
         def extract(name: str) -> float | None:
@@ -311,6 +316,7 @@ def parse_yield_file(path: Path, engine: str) -> dict:
 
     lines = [line.rstrip() for line in read_text_lossy(path).splitlines() if line.strip()]
     header = lines[0].lower()
+    # Some tables contain wind yields only, without an ejecta column.
     has_ejecta = "[ejecta]" in header
 
     isotope_rows = []
@@ -366,6 +372,7 @@ def load_outcomes() -> list[dict]:
 def load_yields() -> list[dict]:
     rows = []
     for directory in sorted(path for path in SECTION6_DIR.iterdir() if path.is_dir()):
+        # The full zonal files are examples, not one yield table per model.
         if directory.name == "sample_full_zonal_yields":
             continue
 
