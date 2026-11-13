@@ -25,6 +25,9 @@ de los datos. Todavía no se construyó el dataset Gold ni se entrenaron modelos
 El script `src/build_silver.py` reconstruye estas tres tablas desde Bronze. Al
 normalizar los nombres de cuatro progenitores de Woosley & Heger (2015), conserva
 el nombre original en `result_model_name` y usa el identificador común en `model`.
+Las masas de los núcleos de helio y CO se calculan con los límites de composición
+de la Tabla 2 de Sukhbold et al. (2016). Los valores `---` de los perfiles
+originales se conservan como faltantes en Silver.
 
 Silver no contiene joins duplicados por engine. Gold permanece vacío.
 
@@ -39,8 +42,8 @@ Silver, pero no forma parte de esta combinación. El paper lo identifica como
 el engine más débil, con más explosiones fallidas, y justifica excluirlo de
 su análisis de nucleosíntesis, es decir, de producción de elementos químicos
 (Sukhbold et al., 2016, pp. 16-18).
-Los pesos son una decisión de este proyecto. El target ponderado todavía no
-fue construido.
+Los pesos son una decisión de este proyecto. El target ponderado se calcula
+de forma exploratoria en `01_eda.ipynb`, pero Gold todavía no fue construido.
 
 Al volver a ejecutar el script, los tres CSV de Silver se sobrescriben de forma
 determinística. No se crean copias ni se acumulan filas:
@@ -51,11 +54,13 @@ python src/build_silver.py
 
 ## Notebooks
 
-- `01_eda.ipynb`: espacio inicial para el análisis exploratorio.
+- `01_eda.ipynb`: análisis exploratorio en curso de progenitores, outcomes,
+  target ponderado y propiedades pre-supernova.
 - `02_unsupervised_learning.ipynb`: espacio inicial para el análisis no supervisado.
 - `03_supervised_learning.ipynb`: espacio inicial para el modelado supervisado.
 
-Los notebooks solo contienen su estructura inicial. El análisis todavía no comenzó.
+Los notebooks de aprendizaje no supervisado y supervisado todavía contienen
+solo su estructura inicial.
 
 ## Entorno
 

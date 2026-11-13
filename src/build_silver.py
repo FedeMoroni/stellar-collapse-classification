@@ -80,7 +80,7 @@ def safe_log10(value: float | None) -> float | None:
 def format_value(value: object) -> object:
     if isinstance(value, float):
         if math.isfinite(value):
-            return round(value, 8)
+            return value
         return None
     return value
 
@@ -107,7 +107,7 @@ def write_csv(path: Path, rows: list[dict]) -> None:
     ordered.extend(sorted(all_fields - set(ordered)))
 
     with path.open("w", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=ordered)
+        writer = csv.DictWriter(handle, fieldnames=ordered, lineterminator="\n")
         writer.writeheader()
         for row in rows:
             writer.writerow({key: format_value(row.get(key)) for key in ordered})
@@ -147,7 +147,7 @@ def parse_presn_file(path: Path) -> dict:
 
         numeric = [parse_float(token) for token in tokens[:11]]
         abundances = {
-            isotope_names[index]: parse_float(tokens[13 + index]) or 0.0
+            isotope_names[index]: parse_float(tokens[13 + index])
             for index in range(len(isotope_names))
         }
         rows.append(
@@ -193,41 +193,21 @@ def parse_presn_file(path: Path) -> dict:
         "surface_log10_radius": safe_log10(last["radius_cm"]),
         "surface_density_g_cm3": last["density_g_cm3"],
         "surface_temperature_k": last["temperature_k"],
-        "surface_h1": last["abundances"].get("H1", 0.0),
-        "surface_he4": last["abundances"].get("He4", 0.0),
-        "surface_c12": last["abundances"].get("C12", 0.0),
-        "surface_o16": last["abundances"].get("O16", 0.0),
-        "surface_fe56": last["abundances"].get("Fe56", 0.0),
+        "surface_h1": last["abundances"].get("H1"),
+        "surface_he4": last["abundances"].get("He4"),
+        "surface_c12": last["abundances"].get("C12"),
+        "surface_o16": last["abundances"].get("O16"),
+        "surface_fe56": last["abundances"].get("Fe56"),
+        # Sukhbold et al. (2016), Table 2, use 20% H and He boundaries.
         "helium_core_mass_msun": outermost_mass_where(
-            rows, lambda row: row["abundances"].get("H1", 0.0) <= 0.1
+            rows,
+            lambda row: row["abundances"].get("H1") is not None
+            and row["abundances"]["H1"] <= 0.2,
         ),
         "co_core_mass_msun": outermost_mass_where(
             rows,
-            lambda row: row["abundances"].get("He4", 0.0) <= 0.1
-            and (row["abundances"].get("C12", 0.0) + row["abundances"].get("O16", 0.0)) >= 0.5,
-        ),
-        "oxygen_rich_mass_msun": outermost_mass_where(
-            rows, lambda row: row["abundances"].get("O16", 0.0) >= 0.5
-        ),
-        "silicon_rich_mass_msun": outermost_mass_where(
-            rows,
-            lambda row: (
-                row["abundances"].get("Si28", 0.0)
-                + row["abundances"].get("S32", 0.0)
-                + row["abundances"].get("Ar36", 0.0)
-                + row["abundances"].get("Ca40", 0.0)
-            )
-            >= 0.5,
-        ),
-        "iron_core_mass_msun": outermost_mass_where(
-            rows,
-            lambda row: (
-                row["abundances"].get("Fe54", 0.0)
-                + row["abundances"].get("Ni56", 0.0)
-                + row["abundances"].get("Fe56", 0.0)
-                + row["abundances"].get("'Fe'", 0.0)
-            )
-            >= 0.5,
+            lambda row: row["abundances"].get("He4") is not None
+            and row["abundances"]["He4"] <= 0.2,
         ),
     }
 
