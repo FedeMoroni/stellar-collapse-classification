@@ -4,14 +4,14 @@ Predicción del remanente final de estrellas masivas (BH o NS) a partir de
 propiedades físicas disponibles antes del colapso, usando los datos de
 Sukhbold et al. (2016).
 
-El proyecto se encuentra actualmente en la etapa de preparación y comprensión
-de los datos. Todavía no se construyó el dataset Gold ni se entrenaron modelos.
+El análisis exploratorio está completo y ya se generó el dataset Gold.
+Todavía no se entrenaron modelos.
 
 ## Estructura
 
 - `data/bronze/`: archivos originales, conservados sin transformar.
 - `data/silver/`: tablas intermedias generadas a partir de Bronze.
-- `data/gold/`: dataset final de modelado. Permanece vacío hasta definir el target y auditar leakage.
+- `data/gold/`: dataset de modelado generado desde el notebook EDA.
 - `src/`: código reutilizable para procesar los datos.
 - `notebooks/`: notebooks iniciales para EDA, aprendizaje no supervisado y aprendizaje supervisado.
 - `docs/`: paper científico de referencia.
@@ -29,7 +29,7 @@ Las masas de los núcleos de helio y CO se calculan con los límites de composic
 de la Tabla 2 de Sukhbold et al. (2016). Los valores `---` de los perfiles
 originales se conservan como faltantes en Silver.
 
-Silver no contiene joins duplicados por engine. Gold permanece vacío.
+Silver no contiene joins duplicados por engine.
 
 `progenitor_features.csv` tiene 200 filas, una por estrella antes del colapso.
 Trece progenitores de menor masa fueron procesados solo con Z9.6.
@@ -43,7 +43,24 @@ el engine más débil, con más explosiones fallidas, y justifica excluirlo de
 su análisis de nucleosíntesis, es decir, de producción de elementos químicos
 (Sukhbold et al., 2016, pp. 16-18).
 Los pesos son una decisión de este proyecto. El target ponderado se calcula
-de forma exploratoria en `01_eda.ipynb`, pero Gold todavía no fue construido.
+en `01_eda.ipynb` y se guarda en Gold.
+
+## Dataset Gold
+
+`data/gold/progenitor_gold.csv` tiene 187 filas, una por progenitor, y 46
+columnas: `model`, 44 propiedades físicas pre-supernova y `target_score`.
+`model` es un identificador y `target_score` es el objetivo del modelo.
+Los outcomes individuales permanecen en Silver para poder auditar el target.
+
+El EDA excluye `surface_fe56` porque todos sus valores son faltantes,
+`zone_count` porque describe la resolución del archivo y `progenitor_family`
+porque es constante entre estas 187 estrellas. Las estimaciones de masa de
+núcleo sin una definición respaldada por los datos originales se quitaron
+anteriormente de Silver. El resto de las features físicas se conserva por
+ahora, aunque algunas están muy correlacionadas.
+
+La última celda del notebook EDA vuelve a generar el CSV y lo sobrescribe si
+ya existe.
 
 Al volver a ejecutar el script, los tres CSV de Silver se sobrescriben de forma
 determinística. No se crean copias ni se acumulan filas:
@@ -54,8 +71,8 @@ python src/build_silver.py
 
 ## Notebooks
 
-- `01_eda.ipynb`: análisis exploratorio en curso de progenitores, outcomes,
-  target ponderado y propiedades pre-supernova.
+- `01_eda.ipynb`: análisis exploratorio de progenitores, outcomes, target
+  ponderado y propiedades pre-supernova. Genera el CSV Gold.
 - `02_unsupervised_learning.ipynb`: espacio inicial para el análisis no supervisado.
 - `03_supervised_learning.ipynb`: espacio inicial para el modelado supervisado.
 
