@@ -12,7 +12,7 @@ Todavía no se entrenaron modelos.
 - `data/bronze/`: archivos originales, conservados sin transformar.
 - `data/silver/`: tablas intermedias generadas a partir de Bronze.
 - `data/gold/`: dataset de modelado generado desde el notebook EDA.
-- `src/`: código reutilizable para procesar los datos.
+- `src/`: procesamiento de datos y definición inicial de la red neuronal.
 - `notebooks/`: EDA, análisis no supervisado y modelado supervisado.
 - `docs/`: paper científico de referencia.
 
@@ -74,9 +74,9 @@ python src/build_silver.py
 - `01_eda.ipynb`: análisis exploratorio de progenitores, outcomes, target
   ponderado y propiedades pre-supernova. Genera el CSV Gold.
 - `02_unsupervised_learning.ipynb`: explora Gold con PCA y K-Means++.
-- `03_supervised_learning.ipynb`: espacio inicial para el modelado supervisado.
+- `03_supervised_learning.ipynb`: separación de datos y preparación del modelado con PyTorch.
 
-El notebook supervisado contiene solo su estructura inicial.
+El entrenamiento supervisado todavía no está implementado.
 
 ## Entorno
 
