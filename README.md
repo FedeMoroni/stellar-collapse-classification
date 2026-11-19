@@ -5,7 +5,7 @@ propiedades físicas disponibles antes del colapso, usando los datos de
 Sukhbold et al. (2016).
 
 El análisis exploratorio está completo y ya se generó el dataset Gold.
-Todavía no se entrenaron modelos.
+El notebook supervisado compara configuraciones de una red neuronal con Leave-One-Out.
 
 ## Estructura
 
@@ -74,9 +74,9 @@ python src/build_silver.py
 - `01_eda.ipynb`: análisis exploratorio de progenitores, outcomes, target
   ponderado y propiedades pre-supernova. Genera el CSV Gold.
 - `02_unsupervised_learning.ipynb`: explora Gold con PCA y K-Means++.
-- `03_supervised_learning.ipynb`: separación de datos y preparación del modelado con PyTorch.
+- `03_supervised_learning.ipynb`: separación estratificada, comparación de hiperparámetros y curvas de pérdida de una MLP en PyTorch.
 
-El entrenamiento supervisado todavía no está implementado.
+La evaluación final sobre test está pendiente.
 
 ## Entorno
 
