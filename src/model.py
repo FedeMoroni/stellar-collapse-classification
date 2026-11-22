@@ -1,13 +1,15 @@
 from torch import nn
 
 class StellarCollapseMLP(nn.Module):
-    def __init__(self, input_size, hidden_size):
+    def __init__(self, input_size, hidden_sizes):
         super().__init__()
-        self.hidden = nn.Linear(input_size, hidden_size)
-        self.relu = nn.ReLU()
-        self.output = nn.Linear(hidden_size, 1)
-        self.sigmoid = nn.Sigmoid()
+        layers = []
+        for hidden_size in hidden_sizes:
+            layers.append(nn.Linear(input_size, hidden_size))
+            layers.append(nn.ReLU())
+            input_size = hidden_size
+        layers.append(nn.Linear(input_size, 1))
+        self.network = nn.Sequential(*layers)
 
     def forward(self, x):
-        x = self.relu(self.hidden(x))
-        return self.sigmoid(self.output(x))
+        return self.network(x)

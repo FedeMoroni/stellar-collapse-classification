@@ -1,20 +1,22 @@
 # Stellar Collapse Classification: Black Hole or Neutron Star
 
-Predicción del remanente final de estrellas masivas (BH o NS) a partir de
-propiedades físicas disponibles antes del colapso, usando los datos de
-Sukhbold et al. (2016).
+Estimación del consenso de cuatro modelos de explosión sobre el destino BH o NS
+de estrellas masivas, a partir de propiedades físicas anteriores al colapso.
+Se usan los datos de Sukhbold et al. (2016). El puntaje predicho describe esas
+simulaciones, no una probabilidad observada en estrellas reales.
 
 El análisis exploratorio está completo y ya se generó el dataset Gold.
-El notebook supervisado compara configuraciones de una red neuronal con Leave-One-Out.
+El notebook supervisado compara configuraciones de una red neuronal con Leave-One-Out y evalúa el modelo elegido en test.
 
 ## Estructura
 
 - `data/bronze/`: archivos originales, conservados sin transformar.
 - `data/silver/`: tablas intermedias generadas a partir de Bronze.
 - `data/gold/`: dataset de modelado generado desde el notebook EDA.
-- `src/`: procesamiento de datos y definición inicial de la red neuronal.
+- `src/`: procesamiento de datos, definición de la red neuronal y predictor.
+- `models/`: pesos y configuración del modelo final.
 - `notebooks/`: EDA, análisis no supervisado y modelado supervisado.
-- `docs/`: paper científico de referencia.
+- `docs/`: paper de referencia, informe en PDF, código LaTeX y figuras.
 
 ## Tablas Silver
 
@@ -56,8 +58,8 @@ El EDA excluye `surface_fe56` porque todos sus valores son faltantes,
 `zone_count` porque describe la resolución del archivo y `progenitor_family`
 porque es constante entre estas 187 estrellas. Las estimaciones de masa de
 núcleo sin una definición respaldada por los datos originales se quitaron
-anteriormente de Silver. El resto de las features físicas se conserva por
-ahora, aunque algunas están muy correlacionadas.
+de Silver. El resto de las features físicas se conserva, aunque algunas están
+muy correlacionadas.
 
 La última celda del notebook EDA vuelve a generar el CSV y lo sobrescribe si
 ya existe.
@@ -74,9 +76,20 @@ python src/build_silver.py
 - `01_eda.ipynb`: análisis exploratorio de progenitores, outcomes, target
   ponderado y propiedades pre-supernova. Genera el CSV Gold.
 - `02_unsupervised_learning.ipynb`: explora Gold con PCA y K-Means++.
-- `03_supervised_learning.ipynb`: separación estratificada, comparación de hiperparámetros y curvas de pérdida de una MLP en PyTorch.
+- `03_supervised_learning.ipynb`: separación estratificada, comparación de arquitecturas, curvas de pérdida, entrenamiento final y evaluación en test de una MLP en PyTorch.
 
-La evaluación final sobre test está pendiente.
+## Predicciones
+
+El predictor usa el modelo guardado en `models/stellar_collapse_mlp.pt`.
+El CSV de entrada debe tener las mismas 44 columnas de propiedades físicas que Gold.
+La columna `model` es opcional.
+
+```bash
+python src/predict.py estrellas.csv predicciones.csv
+```
+
+El archivo de salida contiene `predicted_score`, el puntaje de apoyo a BH, y
+`predicted_class`, obtenido con el umbral exploratorio de 0.5.
 
 ## Entorno
 
