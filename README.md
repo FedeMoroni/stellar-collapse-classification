@@ -1,71 +1,74 @@
 # Stellar Collapse Classification: Black Hole or Neutron Star
 
-Estimación del consenso de cuatro modelos de explosión sobre el destino BH o NS
-de estrellas masivas, a partir de propiedades físicas anteriores al colapso.
-Se usan los datos de Sukhbold et al. (2016). El puntaje predicho describe esas
-simulaciones, no una probabilidad observada en estrellas reales.
+This project estimates the agreement of four explosion engines on whether a
+massive star forms a black hole (BH) or a neutron star (NS). It uses the star's
+physical properties before collapse and data from Sukhbold et al. (2016). The
+predicted score describes agreement between simulations, not a calibrated
+probability for a real star.
 
-El análisis exploratorio está completo y ya se generó el dataset Gold.
-El notebook supervisado compara configuraciones de una red neuronal con Leave-One-Out y evalúa el modelo elegido en test.
+The notebooks cover data exploration, unsupervised analysis, model selection,
+and evaluation. A shorter notebook presents the main results and runs the saved
+model on a CSV file.
 
-## Estructura
+For a quick overview, start with the [project summary](notebooks/04_project_summary.ipynb).
+The [report](docs/stellar_collapse_report.pdf) gives the full method and results.
 
-- `data/bronze/`: archivos originales, conservados sin transformar.
-- `data/silver/`: tablas intermedias generadas a partir de Bronze.
-- `data/gold/`: dataset de modelado generado desde el notebook EDA.
-- `src/`: procesamiento de datos y definición de la red neuronal.
-- `models/`: pesos y configuración del modelo final.
-- `notebooks/`: EDA, análisis no supervisado, modelado supervisado y resumen ejecutable.
-- `docs/`: paper de referencia, informe final en PDF y figuras.
+## Project structure
 
-## Tablas Silver
+- `data/bronze/`: original files, kept without changes.
+- `data/silver/`: intermediate tables built from Bronze.
+- `data/gold/`: modeling dataset built in the EDA notebook.
+- `src/`: data processing and neural network definition.
+- `models/`: weights and settings of the final model.
+- `notebooks/`: EDA, unsupervised learning, supervised learning, and a runnable summary.
+- `docs/`: reference paper, final report in PDF, and figures.
 
-- `progenitor_features.csv`: propiedades físicas pre-supernova. Contiene las features candidatas.
-- `engine_outcomes.csv`: resultados BH/NS y variables de la explosión por engine. Se usa para construir el target, no como matriz de features.
-- `auxiliary_yields.csv`: cantidades de elementos químicos expulsados en vientos estelares y durante la explosión. No se usan como features porque los resultados de la explosión generarían leakage.
+## Silver tables
 
-El script `src/build_silver.py` reconstruye estas tres tablas desde Bronze. Al
-normalizar los nombres de cuatro progenitores de Woosley & Heger (2015), conserva
-el nombre original en `result_model_name` y usa el identificador común en `model`.
-Las masas de los núcleos de helio y CO se calculan con los límites de composición
-de la Tabla 2 de Sukhbold et al. (2016). Los valores `---` de los perfiles
-originales se conservan como faltantes en Silver.
+- `progenitor_features.csv`: physical properties before the supernova. It contains candidate input features.
+- `engine_outcomes.csv`: BH/NS outcomes and explosion properties for each engine. The outcomes are used to build the target, not as model inputs.
+- `auxiliary_yields.csv`: elements expelled in stellar winds and during the explosion. They are not model inputs because explosion results would leak information about the outcome.
 
-Silver no contiene joins duplicados por engine.
+The `src/build_silver.py` script rebuilds these three tables from Bronze. When
+it standardizes the names of four Woosley & Heger (2015) progenitors, it keeps
+the original name in `result_model_name` and uses the shared ID in `model`.
+Helium and CO core masses are calculated from the composition limits in Table 2
+of Sukhbold et al. (2016). Values marked `---` in the original profiles remain
+missing in Silver.
 
-`progenitor_features.csv` tiene 200 filas, una por estrella antes del colapso.
-Trece progenitores de menor masa fueron procesados solo con Z9.6.
-Los otros 187 tienen resultados en los cinco engines restantes.
+Silver has no duplicate joins by engine.
 
-Para el target se eligieron cuatro engines: N20 (peso 0.30), W18 (0.30),
-W15 (0.20) y S19.8 (0.20). N20 y W18 tienen mayor peso porque son los dos
-engines en los que se centra principalmente el paper. W20 se conserva en
-Silver, pero no forma parte de esta combinación. El paper lo identifica como
-el engine más débil, con más explosiones fallidas, y justifica excluirlo de
-su análisis de nucleosíntesis, es decir, de producción de elementos químicos
-(Sukhbold et al., 2016, pp. 16-18).
-Los pesos son una decisión de este proyecto. El target ponderado se calcula
-en `01_eda.ipynb` y se guarda en Gold.
+`progenitor_features.csv` has 200 rows, one per star before collapse. Thirteen
+lower-mass progenitors were processed only with Z9.6. The other 187 have
+outcomes from the remaining five engines.
 
-## Dataset Gold
+Four engines were chosen for the target: N20 (weight 0.30), W18 (0.30), W15
+(0.20), and S19.8 (0.20). N20 and W18 have higher weights because they are the
+two engine series that the paper focuses on most. W20 remains in Silver but is
+not part of this target. The paper describes it as the weakest engine, with
+more failed explosions, and excludes it from its nucleosynthesis analysis
+(Sukhbold et al., 2016, pp. 16–18). The weights are a choice made for this
+project. The weighted target is calculated in `01_eda.ipynb` and saved in Gold.
 
-`data/gold/progenitor_gold.csv` tiene 187 filas, una por progenitor, y 46
-columnas: `model`, 44 propiedades físicas pre-supernova y `target_score`.
-`model` es un identificador y `target_score` es el objetivo del modelo.
-Los outcomes individuales permanecen en Silver para poder auditar el target.
+## Gold dataset
 
-El EDA excluye `surface_fe56` porque todos sus valores son faltantes,
-`zone_count` porque describe la resolución del archivo y `progenitor_family`
-porque es constante entre estas 187 estrellas. Las estimaciones de masa de
-núcleo sin una definición respaldada por los datos originales se quitaron
-de Silver. El resto de las features físicas se conserva, aunque algunas están
-muy correlacionadas.
+`data/gold/progenitor_gold.csv` has 187 rows, one per progenitor, and 46
+columns: `model`, 44 physical properties before the supernova, and
+`target_score`. `model` is an ID, and `target_score` is the model's target.
+Individual engine outcomes remain in Silver so the target can be checked.
 
-La última celda del notebook EDA vuelve a generar el CSV y lo sobrescribe si
-ya existe.
+The EDA excludes `surface_fe56` because all its values are missing,
+`zone_count` because it describes the profile resolution, and
+`progenitor_family` because it has the same value for all 187 stars. Core-mass
+estimates without a definition supported by the original data were removed
+from Silver. The other physical features are kept, although some are strongly
+correlated.
 
-Al volver a ejecutar el script, los tres CSV de Silver se sobrescriben de forma
-determinística. No se crean copias ni se acumulan filas:
+The last cell of the EDA notebook regenerates the Gold CSV and overwrites it if
+it already exists.
+
+Running the script again overwrites the three Silver CSV files in the same
+way. It does not create copies or add duplicate rows:
 
 ```bash
 python src/build_silver.py
@@ -73,25 +76,24 @@ python src/build_silver.py
 
 ## Notebooks
 
-- `01_eda.ipynb`: análisis exploratorio de progenitores, outcomes, target
-  ponderado y propiedades pre-supernova. Genera el CSV Gold.
-- `02_unsupervised_learning.ipynb`: explora Gold con PCA y K-Means++.
-- `03_supervised_learning.ipynb`: separación estratificada, comparación de arquitecturas, curvas de pérdida, entrenamiento final y evaluación en test de una MLP en PyTorch.
-- `04_project_summary.ipynb`: resultados principales y una celda final para predecir desde un CSV con el modelo guardado. Se puede leer sin volver a entrenar.
+- `01_eda.ipynb`: explores progenitors, engine outcomes, the weighted target, and physical properties before collapse. It creates the Gold CSV.
+- `02_unsupervised_learning.ipynb`: explores Gold with PCA and K-Means++.
+- `03_supervised_learning.ipynb`: uses a stratified split, compares network architectures, shows loss curves, trains the final PyTorch MLP, and evaluates it on the test set.
+- `04_project_summary.ipynb`: presents the main results and has a final cell that predicts from a CSV with the saved model. It can be read without training the model again.
 
-Las figuras de los tres notebooks de análisis se guardan en `docs/figures/`.
+The figures from the three analysis notebooks are saved in `docs/figures/`.
 
-## Predicciones
+## Predictions
 
-La última celda de `04_project_summary.ipynb` carga el modelo guardado en
-`models/stellar_collapse_mlp.pt`. Cambiar `INPUT_CSV` por la ruta del archivo
-que se quiera predecir. Debe contener las mismas 44 propiedades físicas que Gold;
-`model` es opcional y `target_score` no hace falta. La celda guarda un CSV con
-`predicted_score` y `predicted_class` (NS o BH según el umbral 0.5).
+The last cell of `04_project_summary.ipynb` loads the saved model from
+`models/stellar_collapse_mlp.pt`. Set `INPUT_CSV` to the path of the file you
+want to predict. It must contain the same 44 physical feature columns as Gold;
+`model` is optional, and `target_score` is not needed. The cell writes a CSV
+with `predicted_score` and `predicted_class` (NS or BH using the 0.5 cutoff).
 
-## Entorno
+## Environment
 
-En macOS, crear un entorno virtual local llamado `.SCC`:
+On macOS, create a local virtual environment called `.SCC`:
 
 ```bash
 python3 -m venv .SCC
@@ -100,7 +102,7 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-Para salir del entorno:
+To leave the environment:
 
 ```bash
 deactivate
