@@ -93,7 +93,9 @@ with `predicted_score` and `predicted_class` (NS or BH using the 0.5 cutoff).
 
 ## Environment
 
-On macOS, create a local virtual environment called `.SCC`:
+Use a virtual environment on macOS, Linux, or Windows. From the project root:
+
+### macOS and Linux (bash or zsh)
 
 ```bash
 python3 -m venv .SCC
@@ -102,7 +104,18 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-To leave the environment:
+### Windows (PowerShell)
+
+```powershell
+py -m venv .SCC
+.\.SCC\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+In Windows Command Prompt, activate the environment with `.SCC\Scripts\activate.bat` instead.
+
+To leave the environment on any system:
 
 ```bash
 deactivate
