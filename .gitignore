@@ -34,3 +34,6 @@ env/
 *.tmp
 *.swp
 *~
+
+# Predicciones generadas desde el notebook resumido
+data/predictions/

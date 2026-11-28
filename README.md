@@ -13,10 +13,10 @@ El notebook supervisado compara configuraciones de una red neuronal con Leave-On
 - `data/bronze/`: archivos originales, conservados sin transformar.
 - `data/silver/`: tablas intermedias generadas a partir de Bronze.
 - `data/gold/`: dataset de modelado generado desde el notebook EDA.
-- `src/`: procesamiento de datos, definición de la red neuronal y predictor.
+- `src/`: procesamiento de datos y definición de la red neuronal.
 - `models/`: pesos y configuración del modelo final.
-- `notebooks/`: EDA, análisis no supervisado y modelado supervisado.
-- `docs/`: paper de referencia, informe en PDF, código LaTeX y figuras.
+- `notebooks/`: EDA, análisis no supervisado, modelado supervisado y resumen ejecutable.
+- `docs/`: paper de referencia, informe final en PDF y figuras.
 
 ## Tablas Silver
 
@@ -77,19 +77,17 @@ python src/build_silver.py
   ponderado y propiedades pre-supernova. Genera el CSV Gold.
 - `02_unsupervised_learning.ipynb`: explora Gold con PCA y K-Means++.
 - `03_supervised_learning.ipynb`: separación estratificada, comparación de arquitecturas, curvas de pérdida, entrenamiento final y evaluación en test de una MLP en PyTorch.
+- `04_project_summary.ipynb`: resultados principales y una celda final para predecir desde un CSV con el modelo guardado. Se puede leer sin volver a entrenar.
+
+Las figuras de los tres notebooks de análisis se guardan en `docs/figures/`.
 
 ## Predicciones
 
-El predictor usa el modelo guardado en `models/stellar_collapse_mlp.pt`.
-El CSV de entrada debe tener las mismas 44 columnas de propiedades físicas que Gold.
-La columna `model` es opcional.
-
-```bash
-python src/predict.py estrellas.csv predicciones.csv
-```
-
-El archivo de salida contiene `predicted_score`, el puntaje de apoyo a BH, y
-`predicted_class`, obtenido con el umbral exploratorio de 0.5.
+La última celda de `04_project_summary.ipynb` carga el modelo guardado en
+`models/stellar_collapse_mlp.pt`. Cambiar `INPUT_CSV` por la ruta del archivo
+que se quiera predecir. Debe contener las mismas 44 propiedades físicas que Gold;
+`model` es opcional y `target_score` no hace falta. La celda guarda un CSV con
+`predicted_score` y `predicted_class` (NS o BH según el umbral 0.5).
 
 ## Entorno
 
